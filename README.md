@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://github.com/ichvanul/PointOfSales-VueJs/blob/master/src/assets/img/food-and-restaurant.png" width="200">
+  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/jakmall.jpg" width="200">
   <br>
   Payment Method - Jakmall
   <br>
@@ -18,8 +18,6 @@
 - [Introduction](#introduction)
 - [Demo](#demo)
 - [How To Install](#how-to-install)
-- [Related Project](#related-project)
-- [Contact](#contact)
 
 ## Introduction
 
@@ -27,13 +25,22 @@ Payment Method - Jakmall is a website created for payment transactions. There ar
 
 ## Demo
 
-![Screenshot](https://github.com/ichvanul/PointOfSales-VueJs/blob/master/src/assets/POS.jpg)
+![Screenshot]
+<h1 align="center">
+  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment1.png" width="200">
+</h1>
+<h1 align="center">
+  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment2.png" width="200">
+</h1>
+<h1 align="center">
+  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment2.png" width="200">
+</h1>
 
 ## How To Install
 
 1. ### Clone this repository
    ```
-   $ git clone https://github.com/ichvanul/PointOfSales-VueJs.git
+   $ git clone https://github.com/ichvanul/payment-method.git
    ```
 2. ### Install all depedencies on the package.json
    ```
@@ -52,8 +59,4 @@ Payment Method - Jakmall is a website created for payment transactions. There ar
    npm run lint
    ```
 6. ### Customize configuration
-   See [Configuration Reference](https://cli.vuejs.org/config/)   
-
-## Contact
-
-If you want to contact me you can reach me at <ichvanulyp@gmail.com>.
+   See [Configuration Reference](https://cli.vuejs.org/config/)
