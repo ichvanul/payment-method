@@ -1,0 +1,43 @@
+.button
+  display inline-block
+  font-family $btn-font-family
+  font-weight $btn-font-weight
+  color $btn-color
+  cursor pointer
+  text-align center
+  vertical-align middle
+  user-select none
+  background-color transparent
+  border 0
+  button-size($btn-padding-y, $btn-padding-x, $btn-font-size, $btn-line-height)
+  transition color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out
+
+  &.disabled,
+  &:disabled
+    opacity $btn-disabled-opacity
+    box-shadow none
+    cursor auto
+
+// Button Sizes
+
+.button-lg {
+  button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-line-height-lg);
+}
+.button-sm {
+  button-size($btn-padding-y-sm, $btn-padding-x-sm, $btn-font-size-sm, $btn-line-height-sm);
+}
+
+// Block button
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+// Specificity overrides
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  &.button-block {
+    width: 100%;
+  }
+}

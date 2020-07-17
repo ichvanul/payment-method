@@ -1,0 +1,24 @@
+badge-variant(value)
+  background-color value
+  box-shadow 0 .15rem .35rem rgba(value, .8)
+
+  &.disabled,
+  &:disabled
+    box-shadow none
+    cursor default
+    pointer-events none
+    background-color rgba(value, .2)
+    color value
+
+make-col(size, columns = $grid-columns)
+  flex 0 0 percentage(size / columns)
+  max-width percentage(size / columns)
+
+make-offset(size, columns = $grid-columns)
+  margin-left percentage(size / columns)
+
+// Button
+button-size(padding-y, padding-x, font-size, line-height)
+  padding padding-y padding-x
+  font-size font-size
+  line-height line-height

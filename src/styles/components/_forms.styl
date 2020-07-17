@@ -1,0 +1,63 @@
+.form-group
+  position relative
+  margin .5rem 0
+
+  &.active
+    .form-input-label
+      transform: translate(0, 5px) scale(.65);
+  &:hover
+    cursor text
+
+  .form-input-label
+    position absolute
+    left 1rem
+    top 0
+    transform-origin: top left;
+    transform: translate(0, 16px) scale(1);
+    transition: all .1s ease-in-out;
+    font-size 16px
+    cursor text
+    color #666
+
+  .form-input-control
+    display block
+    padding 1rem 1rem .7rem;
+    border 1px solid #ccc
+    outline 0
+    font-size 16px
+    font-weight 600
+    width 100%
+    &:disabled
+      background-color #f1f1f1
+
+  &.is-invalid
+    &::after
+      content: ''
+      position: absolute;
+      right 1.2rem
+      top 1rem
+      width 10px
+      height 15px
+      background url("../assets/times-solid.svg")
+      filter invert(62%) sepia(28%) saturate(4866%) hue-rotate(358deg) brightness(98%) contrast(108%)
+    .form-input-control
+      border-color $primary
+  &.is-valid
+    &::after
+      content ''
+      position absolute
+      right 1.2rem
+      top 1rem
+      width 6px
+      height 10px
+      border solid $success
+      border-width 0 2px 2px 0
+      transform rotate(45deg)
+    .form-input-control
+      border-color $success
+
+.invalid-feedback
+  color $primary
+  font-size 12px
+  display block
+  margin-top -3px

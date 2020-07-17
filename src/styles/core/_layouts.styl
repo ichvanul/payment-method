@@ -1,0 +1,49 @@
+.container
+  width 100%
+  padding-right ($grid-gutter-width / 2) px
+  padding-left ($grid-gutter-width / 2) px
+  margin-right auto
+  margin-left auto
+
+.w-full
+  width 100%
+.w-screen
+  width 100vw
+.h-full
+  height 100%
+.h-screen
+  height 100vh
+
+.row
+  display flex
+  flex-wrap wrap
+  margin-right -15px
+  margin-left -15px
+
+// Col default
+for i in range(1,12,1)
+  .col-{i}
+  .col-sm-{i}
+  .col-md-{i}
+  .col-lg-{i}
+    position relative
+    width 100%
+    padding-right 15px
+    padding-left 15px
+
+// Cols
+for name, width in $grid-breakpoints
+  @media (min-width width)
+    for i in range(1,12,1)
+      .col-{name}-{i}
+        make-col(i)
+      .offset-{name}-{i}
+        make-offset(i)
+
+// Container max-width
+for name-width, max-width in $container-max-widths
+    for name, width in $grid-breakpoints
+      if name == name-width
+        @media (min-width width)
+          .container
+            max-width max-width

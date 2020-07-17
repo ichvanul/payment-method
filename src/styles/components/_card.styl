@@ -1,0 +1,45 @@
+.card
+  background-color #fff
+  padding 1rem
+
+  .card-header
+    display flex
+    flex-direction row
+    justify-content space-between
+
+    .card-header--title
+      font-family 'Montserrat', sans-serif
+      font-weight 600
+      font-size 36px
+      position: relative;
+      z-index 1
+      &::after
+        content ''
+        width 300px
+        height 8px
+        position: absolute;
+        bottom 5px
+        left 0
+        background-color #eee
+        z-index -1
+
+  .card-side
+    border-left 1px solid rgba($primary, .2)
+    font-size 14px
+    .card-side--title
+      font-size 24px
+      font-weight 600
+    .card-side-body
+      margin-top 16rem
+    .card-side-body-payment
+      margin-top 9rem
+    .card-side-body-finish
+      margin-top 10rem
+    .total
+      font-size 24px
+      font-family 'Montserrat', sans-serif
+
+
+@media (max-width: 767px)
+  .card-side
+    border-left 0 !important

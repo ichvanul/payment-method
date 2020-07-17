@@ -1,0 +1,18 @@
+.badge
+  padding .3rem
+  width 30px
+  height 30px
+  border-radius 50%
+  color #fff
+  display inline-block
+  font-size 16px
+  font-weight 500
+  line-height 1.2
+  text-align center
+  white-space nowrap
+  vertical-align baseline
+  transition color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+
+for name, value in theme-colors
+  .badge-{name}
+    badge-variant(value)
