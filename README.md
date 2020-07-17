@@ -21,7 +21,7 @@
 
 ## Introduction
 
-Payment Method - Jakmall is a website created for payment transactions. There are many features including being able to send checkout receipts in PDF format or sent via email. Written in Vue Js.
+Payment Method - Jakmall is a website created for payment transactions. There are 3 steps in the payment process. First, users can fill out data forms and send as dropshipper (if possible). Second, users can choose shipping services and payment methods. Finally, users will get an Order ID.
 
 ## Demo
 
@@ -33,7 +33,7 @@ Payment Method - Jakmall is a website created for payment transactions. There ar
   <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment2.png">
 </h1>
 <h1 align="center">
-  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment2.png">
+  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment3.png">
 </h1>
 
 ## How To Install
