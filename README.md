@@ -27,13 +27,13 @@ Payment Method - Jakmall is a website created for payment transactions. There ar
 
 ![Screenshot]
 <h1 align="center">
-  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment1.png" width="200">
+  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment1.png">
 </h1>
 <h1 align="center">
-  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment2.png" width="200">
+  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment2.png">
 </h1>
 <h1 align="center">
-  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment2.png" width="200">
+  <img src="https://github.com/ichvanul/payment-method/blob/master/src/assets/Payment2.png">
 </h1>
 
 ## How To Install
